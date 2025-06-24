@@ -71,3 +71,19 @@ pip install torch-2.0.0a0+gite9ebda2-cp39-cp39-linux_aarch64.whl
 ```bash
 pip install flwr pandas
 ```
+
+# Usage
+
+Before usage you should ensure that inside `data/` you placed your desired dataset, and update `client_flwr.py` pointing to the right name of the datasaet.
+
+Now to start the server you can run:
+```bash
+python server_flwr.py
+```
+
+> **Note**: By modifying the config, you can decide on which port to run it.
+
+To start the client:
+```bash
+python client_flwr.py --server_address <server_address>
+```
